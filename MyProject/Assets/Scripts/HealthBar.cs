@@ -26,7 +26,7 @@ public class HealthBar : MonoBehaviour
         fillBar.fillAmount = (float) (health / 100.0);
 
         if(health <= 20) {
-            Debug.Log("Died");
+            GameManager.ChangeScene(GameManager.gameOverScene);
         }
 
     }
@@ -46,14 +46,15 @@ public class HealthBar : MonoBehaviour
         
     }
 
+    
+    void OnCollisionEnter2D (Collision2D hitInfo) {
 
-    void OnTriggerEnter2D (Collider2D hitInfo) {
-        
-        Enemy enemy = hitInfo.GetComponent<Enemy>();
-        if(enemy != null){
+
+        if(hitInfo.collider.tag == "enemy"){
             LoseHealth(25);
         }
     }
+
 
 
 }
