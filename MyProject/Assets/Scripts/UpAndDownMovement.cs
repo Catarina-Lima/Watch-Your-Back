@@ -11,7 +11,7 @@ public class UpAndDownMovement : MonoBehaviour
     void Start () {
        
         min=transform.position.y;
-        max=transform.position.y+4;
+        max=transform.position.y+10;
    
     }
    
