@@ -9,6 +9,10 @@ public class NextLevel : MonoBehaviour
 
     void OnTriggerEnter2D (Collider2D hitInfo) {
 
-        GameManager.ChangeScene(nextLevel);
+        Player player = hitInfo.GetComponent<Player>();
+        if(player != null){
+            GameManager.ChangeScene(nextLevel);
+        }
+        
     }
 }
