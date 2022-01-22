@@ -15,11 +15,14 @@ public class HeroController : MonoBehaviour
 
     bool facingLeft;
 
+    public bool hasGun = false;
+    private int bullets = 0;
+
     // Start is called before the first frame update
     void Start()
     {
-    rb = GetComponent<Rigidbody2D>();
-    coll = GetComponent<PolygonCollider2D>();
+        rb = GetComponent<Rigidbody2D>();
+        coll = GetComponent<PolygonCollider2D>();
     }
 
     void Update()
@@ -43,24 +46,48 @@ public class HeroController : MonoBehaviour
         }
     }
 
-/*
-    void Move()
+    public void rechargeGun()
     {
-        speed = 40;
-    movex = Input.GetAxis("Horizontal");
-    movey = Input.GetAxis("Vertical");
-    move = new Vector2(movex * speed * Time.fixedDeltaTime, movey * speed * Time.fixedDeltaTime);
-    rb.AddForce(move);
-    if (movex > 0 && facingLeft)
+        if(bullets == 0)
         {
-        transform.localScale = new Vector3(3.34f, 3.62f, 1.58f);
-        facingLeft = false;
-        }
-    if (movex < 0 && !facingLeft)
-        {
-        transform.localScale = new Vector3(-3.34f, 3.62f, 1.58f);
-        facingLeft = true;
+            bullets = 2;
         }
     }
-    */
+
+    public bool hasBullets()
+    {
+        if(bullets > 0)
+        {
+            return true;
+        } else
+        {
+            return false;
+        }
+    }
+
+    public void fireBulletRescue()
+    {
+        bullets -= 1;
+    }
+
+    /*
+        void Move()
+        {
+            speed = 40;
+        movex = Input.GetAxis("Horizontal");
+        movey = Input.GetAxis("Vertical");
+        move = new Vector2(movex * speed * Time.fixedDeltaTime, movey * speed * Time.fixedDeltaTime);
+        rb.AddForce(move);
+        if (movex > 0 && facingLeft)
+            {
+            transform.localScale = new Vector3(3.34f, 3.62f, 1.58f);
+            facingLeft = false;
+            }
+        if (movex < 0 && !facingLeft)
+            {
+            transform.localScale = new Vector3(-3.34f, 3.62f, 1.58f);
+            facingLeft = true;
+            }
+        }
+        */
 }

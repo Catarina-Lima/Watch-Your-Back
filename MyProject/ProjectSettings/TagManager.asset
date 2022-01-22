@@ -7,6 +7,7 @@ TagManager:
   - enemy
   - wall
   - fossa
+  - prisoner
   layers:
   - Default
   - TransparentFX
