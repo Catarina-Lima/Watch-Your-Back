@@ -16,6 +16,7 @@ public class playerActions : MonoBehaviour
     private Vector3 target;
 
     public GameObject bulletPrefab;
+    public GameObject bulletRescue;
 
     public Transform firePoint;
 
@@ -61,10 +62,6 @@ public class playerActions : MonoBehaviour
             fireBullet(direction, rotationZ);
             //goAway();
 
-
-
-            
-
             hero.GetComponent<Rigidbody2D>().AddForce(forceDirection * 10, ForceMode2D.Impulse);
             
             
@@ -72,6 +69,18 @@ public class playerActions : MonoBehaviour
             //hero.transform.position = new Vector3(difference.x, difference.y, -2);
         } else {
             //hero.GetComponent<Rigidbody2D>().AddForce(forceDirection * 0, ForceMode2D.Impulse);
+        }
+
+        if (hero.GetComponent<HeroController>().hasGun)
+        {
+            if (Input.GetMouseButtonDown(1) && hero.GetComponent<HeroController>().hasBullets())
+            {
+                UnityEngine.Debug.Log(String.Format("DISPAROU"));
+                float distance = difference.magnitude;
+                Vector2 direction = difference / distance;
+                hero.GetComponent<HeroController>().fireBulletRescue();
+                rescueBullet(direction, rotationZ);
+            }
         }
 
     }
@@ -84,11 +93,15 @@ public class playerActions : MonoBehaviour
 
         //hero.transform.position = direction;
         //hero.GetComponent<Rigidbody2D>().velocity = direction * bulletSpeed;
-
-
-
     }
 
+    void rescueBullet(Vector2 direction, float rotationZ)
+    {
+        GameObject br = Instantiate(bulletRescue) as GameObject;
+        br.transform.position = firePoint.position;
+        br.transform.rotation = Quaternion.Euler(0.0f, 0.0f, rotationZ);
+        br.GetComponent<Rigidbody2D>().velocity = direction * bulletSpeed;
+    }
 
 
     void goAway() {
