@@ -11,7 +11,7 @@ public class BackAndForthMovement : MonoBehaviour
     void Start () {
        
         min=transform.position.x;
-        max=transform.position.x+4;
+        max=transform.position.x+10;
    
     }
    
