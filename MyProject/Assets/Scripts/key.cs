@@ -1,42 +1,50 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class key : MonoBehaviour
 {
-    public enum InteractionType{NONE,PickUp,Examine}
-    public InteractionType tipo;
+    [SerializeField]
+    public Text pickUpText;
 
-    void Reset(){
-        GetComponent<Collider2D>().isTrigger = true;
-        gameObject.layer = 10;
-    }
-    public void Interact(){
-        switch (tipo)
-        {
-            case InteractionType.PickUp:
-            FindObjectOfType<InteractionSystem>().PickUpItem(gameObject);
-            Debug.Log("Pick up");
-            gameObject.SetActive(false);
-            
-            break;
-            case InteractionType.Examine:
-            Debug.Log("Examine");
-            break;
-            default:
-            Debug.Log("Null Item");
-            break;
-        }
-    }
+    private bool pickUpAllowed;
+
+    GameObject hero;
+
     // Start is called before the first frame update
     void Start()
     {
-        
+        pickUpText.gameObject.SetActive(false);
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+
+        if( pickUpAllowed && Input.GetKeyDown(KeyCode.F)){
+            PickUp();
+        }   
+    }
+
+    private void OnTriggerEnter2D(Collider2D col){
+        if( col.gameObject.name.Equals("hero")){
+            hero = col.gameObject;
+            pickUpText.gameObject.SetActive(true);
+            pickUpAllowed = true;
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D col){
+        if( col.gameObject.name.Equals("hero")){
+            pickUpText.gameObject.SetActive(false);
+            pickUpAllowed = false;
+        }
+    } 
+
+    private void PickUp(){
+        hero.GetComponent<HeroController>().gotkey = true;
+        Destroy(gameObject);
+
     }
 }

@@ -9,6 +9,8 @@ public class HeroController : MonoBehaviour
     Rigidbody2D rb;
     PolygonCollider2D coll;
 
+    public bool gotkey = false;
+
     Vector2 movement;
 
     Vector2 move;
