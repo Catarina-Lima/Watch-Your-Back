@@ -21,7 +21,10 @@ public class BulletDetectHero : MonoBehaviour
         Destroy (gameObject, 3f);
     }
 
-    void OnTriggerEnter2D (Collider2D col){
+    void OnTriggerEnter2D (Collider2D col) {
+        
+        //dividir o if, ver se eh o hero e se for, ir buscar o objeto healthbar e fazer o metodo de diminuir
+
         if(col.gameObject.name.Equals("hero") || col.gameObject.tag.Equals("wall") ){
             Debug.Log("Hit!");
             Destroy(gameObject);
