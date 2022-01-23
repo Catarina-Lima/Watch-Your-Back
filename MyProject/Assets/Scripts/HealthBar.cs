@@ -18,16 +18,19 @@ public class HealthBar : MonoBehaviour
     Usar valores de 0 a 100  
     */
     public void LoseHealth (int value) {
-        
-        if (health <= 0)
-            return;
 
-        health -= (value * howMuchIsShowing) ;
-        fillBar.fillAmount = (float) (health / 100.0);
+        //if (health <= 0)
+        //{
+        //    GameManager.ChangeScene(GameManager.gameOverScene);
+        //    return;
+        //}
 
         if(health <= 20) {
             GameManager.ChangeScene(GameManager.gameOverScene);
         }
+
+        health -= (value * howMuchIsShowing);
+        fillBar.fillAmount = (float)(health / 100.0);
 
     }
 

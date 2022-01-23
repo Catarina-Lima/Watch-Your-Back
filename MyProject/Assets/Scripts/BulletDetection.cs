@@ -17,7 +17,9 @@ public class BulletDetection : MonoBehaviour
         if(enemy != null){
             enemy.TakeDamage(50);
         }
-        if(!hitInfo.gameObject.tag.Equals("fossa")){
+
+
+        if (!hitInfo.gameObject.tag.Equals("fossa")){
             Destroy(gameObject);
         }
         UnityEngine.Debug.Log(hitInfo.name);
