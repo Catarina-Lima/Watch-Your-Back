@@ -18,6 +18,11 @@ public class BulletDetection : MonoBehaviour
             enemy.TakeDamage(50);
         }
 
+        Prisoner prisoner = hitInfo.GetComponent<Prisoner>();
+        if (prisoner != null)
+        {
+            prisoner.LoseHealth(100);
+        }
 
         if (!hitInfo.gameObject.tag.Equals("fossa")){
             Destroy(gameObject);

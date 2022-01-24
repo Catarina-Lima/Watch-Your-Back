@@ -55,6 +55,9 @@ public class HealthBar : MonoBehaviour
         if(hitInfo.collider.tag == "orange_enemy"){
             LoseHealth(25);
         }
+        if(hitInfo.collider.tag == "picos"){
+            LoseHealth(15);
+        }
     }
 
 
