@@ -52,7 +52,7 @@ public class HealthBar : MonoBehaviour
     
     void OnCollisionEnter2D (Collision2D hitInfo) {
 
-        if(hitInfo.collider.tag == "enemy"){
+        if(hitInfo.collider.tag == "orange_enemy"){
             LoseHealth(25);
         }
     }
