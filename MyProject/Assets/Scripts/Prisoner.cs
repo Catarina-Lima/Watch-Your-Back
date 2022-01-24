@@ -31,13 +31,7 @@ public class Prisoner : MonoBehaviour
 
         health -= (value);
 
-        // Update is called once per frame
-        void Update()
-        {
-            if (Input.GetKeyDown(KeyCode.Return))
-                LoseHealth(25);
 
-        }
     }
 
 }

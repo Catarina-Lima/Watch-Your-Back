@@ -9,10 +9,8 @@ TagManager:
   - fossa
   - prisoner
   - orange_enemy
-<<<<<<< HEAD
-=======
   - picos
->>>>>>> 0fdd2a13d751a8466d491bc74e48e91bedb44338
+  - fogo
   layers:
   - Default
   - TransparentFX
