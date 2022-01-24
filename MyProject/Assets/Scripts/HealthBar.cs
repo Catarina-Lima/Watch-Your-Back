@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class HealthBar : MonoBehaviour
 {
@@ -25,12 +26,12 @@ public class HealthBar : MonoBehaviour
         //    return;
         //}
 
-        if(health <= 20) {
-            GameManager.ChangeScene(GameManager.gameOverScene);
-        }
-
         health -= (value * howMuchIsShowing);
         fillBar.fillAmount = (float)(health / 100.0);
+
+        if(health <= 20) {
+             GameManager.ChangeScene(GameManager.gameOverScene, SceneManager.GetActiveScene().buildIndex);
+        }
 
     }
 
@@ -53,11 +54,22 @@ public class HealthBar : MonoBehaviour
     void OnCollisionEnter2D (Collision2D hitInfo) {
 
         if(hitInfo.collider.tag == "orange_enemy"){
-            LoseHealth(25);
+            LoseHealth(30);
         }
-        if(hitInfo.collider.tag == "picos"){
+        else if(hitInfo.collider.tag == "picos"){
             LoseHealth(15);
         }
+        else if(hitInfo.collider.tag == "fogo"){
+           GameManager.ChangeScene(GameManager.gameOverScene, SceneManager.GetActiveScene().buildIndex);
+        }
+        else if(hitInfo.collider.tag == "green_enemy"){
+            LoseHealth(15);
+        }
+        else if(hitInfo.collider.tag == "purple_enemy"){
+            LoseHealth(10);
+        }
+
+        //inimigo roxo, verde,
     }
 
 

@@ -11,6 +11,8 @@ TagManager:
   - orange_enemy
   - picos
   - fogo
+  - green_enemy
+  - purple_enemy
   layers:
   - Default
   - TransparentFX

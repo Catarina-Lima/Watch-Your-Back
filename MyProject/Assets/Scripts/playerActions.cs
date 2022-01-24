@@ -34,11 +34,11 @@ public class playerActions : MonoBehaviour
         float rotationZ = Mathf.Atan2(difference.y, difference.x) * Mathf.Rad2Deg;
 
         if (rotationZ > 90 || rotationZ < -90){
-            hero.transform.localScale = new Vector3(3.34f, -3.62f, 1.58f);
+            hero.transform.localScale = new Vector3(5.34f, -5.62f, 1.58f);
             //hero.transform.rotation = Quaternion.Euler(0.0f, 0.0f, rotationZ);
         }
         else {
-            hero.transform.localScale = new Vector3(3.34f, 3.62f, 1.58f);
+            hero.transform.localScale = new Vector3(5.34f, 5.62f, 1.58f);
            //hero.transform.rotation = Quaternion.Euler(0.0f, 0.0f, rotationZ);
         }
 

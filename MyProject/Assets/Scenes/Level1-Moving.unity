@@ -1345,6 +1345,7 @@ MonoBehaviour:
   bulletSpeed: 60
   hero: {fileID: 1535192182}
   bulletPrefab: {fileID: 8177319127926474859, guid: 6f1745679dc44e841ad1a1a4fa4504a8, type: 3}
+  bulletRescue: {fileID: 0}
   firePoint: {fileID: 1450479577}
 --- !u!114 &1127294009
 MonoBehaviour:
@@ -2444,7 +2445,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c376eb3853f06764daad1ee86222d086, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nextLevel: 0
+  nextLevel: 2
 --- !u!58 &1849256906
 CircleCollider2D:
   m_ObjectHideFlags: 0

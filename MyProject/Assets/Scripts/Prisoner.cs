@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Prisoner : MonoBehaviour
 {
@@ -26,7 +27,7 @@ public class Prisoner : MonoBehaviour
 
         if (health <= 20)
         {
-            GameManager.ChangeScene(GameManager.gameOverScene);
+            GameManager.ChangeScene(GameManager.gameOverScene, SceneManager.GetActiveScene().buildIndex);
         }
 
         health -= (value);

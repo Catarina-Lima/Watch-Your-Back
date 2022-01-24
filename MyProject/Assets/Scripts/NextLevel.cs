@@ -11,7 +11,7 @@ public class NextLevel : MonoBehaviour
 
         Player player = hitInfo.GetComponent<Player>();
         if(player != null){
-            GameManager.ChangeScene(nextLevel);
+            GameManager.LoadNextLevel(nextLevel);
         }
         
     }
