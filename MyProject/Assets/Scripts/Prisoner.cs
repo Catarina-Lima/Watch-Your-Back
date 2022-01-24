@@ -6,10 +6,13 @@ public class Prisoner : MonoBehaviour
 {
 
     public float health = 100;
+    public Transform explosion;
 
     public void Save()
     {
-        Destroy(gameObject);
+        GameObject exploder = ((Transform)Instantiate(explosion, this.transform.position, this.transform.rotation)).gameObject;
+        Destroy(gameObject, 0.2f);
+        Destroy(exploder, 1.0f);
     }
 
     public void LoseHealth(int value)
