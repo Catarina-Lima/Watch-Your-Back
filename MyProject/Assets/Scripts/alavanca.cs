@@ -43,7 +43,10 @@ public class alavanca : MonoBehaviour
 
     private void OnTriggerExit2D(Collider2D col){
         if( col.gameObject.name.Equals("hero")){
-            switchText.gameObject.SetActive(false);
+            if(switchText != null) {
+                switchText.gameObject.SetActive(false);
+            }
+            
             switchAllowed = false;
         }
     }
