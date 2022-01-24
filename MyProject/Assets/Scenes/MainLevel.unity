@@ -3080,7 +3080,7 @@ GameObject:
   - component: {fileID: 122519424}
   m_Layer: 0
   m_Name: picos5
-  m_TagString: Untagged
+  m_TagString: picos
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3203,7 +3203,7 @@ GameObject:
   - component: {fileID: 134078154}
   m_Layer: 0
   m_Name: picos4
-  m_TagString: Untagged
+  m_TagString: picos
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3326,7 +3326,7 @@ GameObject:
   - component: {fileID: 138196117}
   m_Layer: 0
   m_Name: picos11
-  m_TagString: Untagged
+  m_TagString: picos
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7805,7 +7805,7 @@ GameObject:
   - component: {fileID: 410292059}
   m_Layer: 0
   m_Name: picos1
-  m_TagString: Untagged
+  m_TagString: picos
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8207,7 +8207,7 @@ GameObject:
   - component: {fileID: 486758793}
   m_Layer: 0
   m_Name: picos1 (6)
-  m_TagString: Untagged
+  m_TagString: picos
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9045,7 +9045,7 @@ GameObject:
   - component: {fileID: 621260672}
   m_Layer: 0
   m_Name: picos10
-  m_TagString: Untagged
+  m_TagString: picos
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9168,7 +9168,7 @@ GameObject:
   - component: {fileID: 747240420}
   m_Layer: 0
   m_Name: picos1 (2)
-  m_TagString: Untagged
+  m_TagString: picos
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9291,7 +9291,7 @@ GameObject:
   - component: {fileID: 756910533}
   m_Layer: 0
   m_Name: picos1 (7)
-  m_TagString: Untagged
+  m_TagString: picos
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10508,7 +10508,7 @@ Tilemap:
     second:
       serializedVersion: 2
       m_TileIndex: 5
-      m_TileSpriteIndex: 7
+      m_TileSpriteIndex: 11
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -10945,16 +10945,16 @@ Tilemap:
     m_Data: {fileID: 7751721184342671119, guid: 445ab209856d1c149bad0d180842f899, type: 3}
   - m_RefCount: 4
     m_Data: {fileID: 6784672268297643267, guid: 445ab209856d1c149bad0d180842f899, type: 3}
-  - m_RefCount: 1
-    m_Data: {fileID: 302825272597805147, guid: 445ab209856d1c149bad0d180842f899, type: 3}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
   - m_RefCount: 8
     m_Data: {fileID: -4709794302252237409, guid: 445ab209856d1c149bad0d180842f899, type: 3}
   - m_RefCount: 2
     m_Data: {fileID: -6521824773517356743, guid: 445ab209856d1c149bad0d180842f899, type: 3}
   - m_RefCount: 5
     m_Data: {fileID: 4172624424822379544, guid: 445ab209856d1c149bad0d180842f899, type: 3}
-  - m_RefCount: 0
-    m_Data: {fileID: 0}
+  - m_RefCount: 1
+    m_Data: {fileID: 302825272597805147, guid: 445ab209856d1c149bad0d180842f899, type: 3}
   m_TileMatrixArray:
   - m_RefCount: 51
     m_Data:
@@ -11103,7 +11103,7 @@ GameObject:
   - component: {fileID: 899682421}
   m_Layer: 0
   m_Name: picos8
-  m_TagString: Untagged
+  m_TagString: picos
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11364,7 +11364,7 @@ GameObject:
   - component: {fileID: 991614657}
   m_Layer: 0
   m_Name: picos1 (4)
-  m_TagString: Untagged
+  m_TagString: picos
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11685,7 +11685,7 @@ GameObject:
   - component: {fileID: 1083910422}
   m_Layer: 0
   m_Name: picos9
-  m_TagString: Untagged
+  m_TagString: picos
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11808,7 +11808,7 @@ GameObject:
   - component: {fileID: 1143806920}
   m_Layer: 0
   m_Name: picos1 (5)
-  m_TagString: Untagged
+  m_TagString: picos
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12125,7 +12125,7 @@ GameObject:
   - component: {fileID: 1291089944}
   m_Layer: 0
   m_Name: picos6
-  m_TagString: Untagged
+  m_TagString: picos
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12806,7 +12806,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Porta
+  m_Text: "Abre \ncom \"F\""
 --- !u!222 &1392546909
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -12831,7 +12831,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -2.365}
+  m_AnchoredPosition: {x: 0, y: -2.3649998}
   m_SizeDelta: {x: 0, y: -4.73}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1394492403
@@ -12896,7 +12896,7 @@ GameObject:
   - component: {fileID: 1411508291}
   m_Layer: 0
   m_Name: picos3
-  m_TagString: Untagged
+  m_TagString: picos
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13183,7 +13183,11 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: New Text
+  m_Text: 'Clica "F"
+
+    para puxar
+
+    a alavanca'
 --- !u!222 &1546171784
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -13653,7 +13657,7 @@ GameObject:
   - component: {fileID: 1690572684}
   m_Layer: 0
   m_Name: picos2
-  m_TagString: Untagged
+  m_TagString: picos
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13776,7 +13780,7 @@ GameObject:
   - component: {fileID: 1699351105}
   m_Layer: 0
   m_Name: picos1
-  m_TagString: Untagged
+  m_TagString: picos
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14476,7 +14480,7 @@ GameObject:
   - component: {fileID: 1837639658}
   m_Layer: 0
   m_Name: picos1 (3)
-  m_TagString: Untagged
+  m_TagString: picos
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14599,7 +14603,7 @@ GameObject:
   - component: {fileID: 1869126432}
   m_Layer: 0
   m_Name: picos12
-  m_TagString: Untagged
+  m_TagString: picos
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15110,7 +15114,7 @@ GameObject:
   - component: {fileID: 1973274608}
   m_Layer: 0
   m_Name: picos7
-  m_TagString: Untagged
+  m_TagString: picos
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15355,7 +15359,7 @@ GameObject:
   - component: {fileID: 2118276560}
   m_Layer: 0
   m_Name: picos1 (1)
-  m_TagString: Untagged
+  m_TagString: picos
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

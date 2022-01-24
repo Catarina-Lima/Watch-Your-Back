@@ -8,6 +8,8 @@ TagManager:
   - wall
   - fossa
   - prisoner
+  - orange_enemy
+  - picos
   layers:
   - Default
   - TransparentFX
