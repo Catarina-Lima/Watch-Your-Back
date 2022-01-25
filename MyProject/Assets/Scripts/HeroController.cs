@@ -20,6 +20,10 @@ public class HeroController : MonoBehaviour
     public bool hasGun = false;
     private int bullets = 0;
 
+
+    public GameObject bulletsRescueUI;
+
+
     // Start is called before the first frame update
     void Start()
     {
@@ -53,6 +57,8 @@ public class HeroController : MonoBehaviour
         if(bullets == 0)
         {
             bullets = 2;
+            bulletsRescueUI.GetComponent<UIScreen>().allBullets();
+
         }
     }
 
@@ -69,6 +75,13 @@ public class HeroController : MonoBehaviour
 
     public void fireBulletRescue()
     {
+
+        if(bullets == 1){
+            bulletsRescueUI.GetComponent<UIScreen>().hideLastBullet();
+        }
+        else {
+            bulletsRescueUI.GetComponent<UIScreen>().hideBullet();
+        }
         bullets -= 1;
     }
 

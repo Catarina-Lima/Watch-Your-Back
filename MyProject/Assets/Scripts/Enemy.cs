@@ -11,7 +11,7 @@ public class Enemy : MonoBehaviour
     // Start is called before the first frame update
     public void TakeDamage (int damage) {
 
-        UnityEngine.Debug.Log(health);
+        //UnityEngine.Debug.Log(health);
         health -= damage;
         UnityEngine.Debug.Log(health);
 

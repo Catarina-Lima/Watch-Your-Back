@@ -33,6 +33,8 @@ public class Gun : MonoBehaviour
         {
             hero = hitInfo.gameObject;
             rescueGun = true;
+            GameObject ui = GameObject.Find("RescueBullets");
+            ui.GetComponent<UIScreen>().canRescue();
         }
 
     }
