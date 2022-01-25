@@ -14,4 +14,22 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Level1-Moving.unity
     guid: d40df1be32631fd47a6ceac1bf78ceac
+<<<<<<< Updated upstream
+=======
+  - enabled: 1
+    path: Assets/Scenes/Nivel_2.unity
+    guid: 519be82837cc40f4da9fec457311f546
+  - enabled: 1
+    path: Assets/Scenes/MainLevel.unity
+    guid: 49891071924063f4dae0a1d7e0a89523
+  - enabled: 1
+    path: Assets/Scenes/StartMenu.unity
+    guid: 5b4d95ad48c0fdb4daa7276f478ff553
+  - enabled: 1
+    path: Assets/Scenes/ControlMenu.unity
+    guid: b00f9b4269e92f045937deb9c4ecd9ef
+  - enabled: 1
+    path: Assets/Scenes/CreditsScene.unity
+    guid: 43469e5d3b9a6e84c98aba5252a15635
+>>>>>>> Stashed changes
   m_configObjects: {}
