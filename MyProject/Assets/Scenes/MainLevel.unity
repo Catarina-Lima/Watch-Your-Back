@@ -15295,7 +15295,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 0
     m_LineSpacing: 11
-  m_Text: Press "F" to pick up
+  m_Text: Clica "F" para apanhar
 --- !u!222 &1736892202
 CanvasRenderer:
   m_ObjectHideFlags: 0
