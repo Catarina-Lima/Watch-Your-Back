@@ -439,22 +439,11 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
-<<<<<<< Updated upstream
   - {fileID: 1248374869}
   - {fileID: 27994092}
   - {fileID: 528908485}
   m_Father: {fileID: 0}
   m_RootOrder: 1
-=======
-  - {fileID: 293301756}
-  - {fileID: 1104787924}
-  - {fileID: 1937679227}
-  - {fileID: 1084798851}
-  - {fileID: 1601891258}
-  - {fileID: 1081708311}
-  m_Father: {fileID: 782575155}
-  m_RootOrder: 0
->>>>>>> Stashed changes
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -1047,8 +1036,6 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: 'Careful!
-
-
     game over can happen if you lose all your health, but also
     if you shoot one of the hostages with dangerous bullets, or if you shoot an alien
     with rescue bullets.'
