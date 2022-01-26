@@ -62,7 +62,7 @@ public class BulletRescueDetection : MonoBehaviour
         Debug.Log("acabou");
         Debug.Log(SceneManager.GetActiveScene().buildIndex);
 
-        if(SceneManager.GetActiveScene().buildIndex == 6){
+        if(SceneManager.GetActiveScene().buildIndex == 5){
                 GameManager.LoadNextLevel(GameManager.startMenu);
             }
         else {

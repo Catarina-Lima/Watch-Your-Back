@@ -23,6 +23,7 @@ public class SoundManager : MonoBehaviour
         saveSound = Resources.Load<AudioClip>("save_prisoner");
 
         audioSrc = GetComponent<AudioSource>();
+        audioSrc.volume = 0.1f;
 
     }
 

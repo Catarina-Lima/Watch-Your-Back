@@ -32,6 +32,8 @@ public class key : MonoBehaviour
             hero = col.gameObject;
             pickUpText.gameObject.SetActive(true);
             pickUpAllowed = true;
+
+                        
         }
     }
 
@@ -44,6 +46,10 @@ public class key : MonoBehaviour
 
     private void PickUp(){
         hero.GetComponent<HeroController>().gotkey = true;
+
+        GameObject ui = GameObject.Find("Key");
+        ui.GetComponent<UIScreenKey>().lockDoor();
+
         Destroy(gameObject);
 
     }

@@ -54,6 +54,10 @@ public class door : MonoBehaviour
 
     private void Unlock(){
         hero.GetComponent<HeroController>().gotkey = false;
+
+        GameObject ui = GameObject.Find("Key");
+        ui.GetComponent<UIScreenKey>().unLockDoor();
+
         Destroy(gameObject);
         Destroy(coll);
     }
