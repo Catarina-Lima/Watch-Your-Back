@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class NextLevel : MonoBehaviour
 {
@@ -9,9 +10,9 @@ public class NextLevel : MonoBehaviour
 
     void OnTriggerEnter2D (Collider2D hitInfo) {
 
-        Player player = hitInfo.GetComponent<Player>();
+        HealthBar player = hitInfo.GetComponent<HealthBar>();
         if(player != null){
-            GameManager.LoadNextLevel(nextLevel);
+             GameManager.ChangeScene(SceneManager.GetActiveScene().buildIndex + 1, SceneManager.GetActiveScene().buildIndex);
         }
         
     }

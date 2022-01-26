@@ -33,7 +33,7 @@ public class Menu : MonoBehaviour
     public void play(){
 
         //GameManager.ChangeScene(GameManager.levelOneScene);
-        GameManager.LoadNextLevel(GameManager.levelOneScene);
+        GameManager.LoadNextLevel(GameManager.movingScene);
     }
 
 

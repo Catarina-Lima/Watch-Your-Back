@@ -25,12 +25,12 @@ public class Prisoner : MonoBehaviour
         //    return;
         //}
 
+        health -= (value);
+
         if (health <= 20)
         {
             GameManager.ChangeScene(GameManager.gameOverScene, SceneManager.GetActiveScene().buildIndex);
         }
-
-        health -= (value);
 
 
     }

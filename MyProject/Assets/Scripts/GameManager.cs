@@ -10,8 +10,9 @@ public class GameManager {
     public static int startMenu = 1;
     public static int controlMenu = 2;
     public static int creditScene = 3;
-    public static int levelOneScene = 4;
-    public static int mainLevel = 5;
+    public static int movingScene = 4;
+    public static int levelOneScene = 5 ;
+    public static int mainLevel = 6;
 
     static int atual;
 
@@ -22,7 +23,7 @@ public class GameManager {
 
     public static void ChangeScene(int sceneACarregar, int atualScene) {
 
-        int load = gameOverScene;
+        int load = sceneACarregar;
 
         if (atualScene == gameOverScene){
             load = atual;

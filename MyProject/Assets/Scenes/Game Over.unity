@@ -223,7 +223,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -4.980011, y: -4.019989}
+  m_AnchoredPosition: {x: -4.980011, y: 21}
   m_SizeDelta: {x: 935.57, y: 556.25}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &293301757
@@ -317,7 +317,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 5
+  orthographic size: 8
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -439,9 +439,12 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
-  - {fileID: 1248374869}
-  - {fileID: 27994092}
-  - {fileID: 528908485}
+  - {fileID: 293301756}
+  - {fileID: 1081708311}
+  - {fileID: 1084798851}
+  - {fileID: 1104787924}
+  - {fileID: 1601891258}
+  - {fileID: 1937679227}
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -573,11 +576,11 @@ RectTransform:
   m_Children:
   - {fileID: 995324815}
   m_Father: {fileID: 887160224}
-  m_RootOrder: 5
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -147, y: -170.44}
+  m_AnchoredPosition: {x: -147, y: -145.42001}
   m_SizeDelta: {x: 361.61, y: 115.13}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1081708312
@@ -704,11 +707,11 @@ RectTransform:
   m_LocalScale: {x: 0.50699997, y: 0.50699997, z: 25.349998}
   m_Children: []
   m_Father: {fileID: 887160224}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -1.1537, y: -250}
+  m_AnchoredPosition: {x: -1.1537, y: -224.98001}
   m_SizeDelta: {x: 779.76, y: 92.21}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1084798852
@@ -783,11 +786,11 @@ RectTransform:
   m_LocalScale: {x: 0.50699997, y: 0.50699997, z: 25.349998}
   m_Children: []
   m_Father: {fileID: 887160224}
-  m_RootOrder: 1
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.00000047684, y: 96}
+  m_AnchoredPosition: {x: -0.00000047684, y: 121.01999}
   m_SizeDelta: {x: 691.26, y: 128.65}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1104787925
@@ -868,7 +871,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 133, y: -170.44}
+  m_AnchoredPosition: {x: 133, y: -145.42001}
   m_SizeDelta: {x: 361.61, y: 115.13}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1601891259
@@ -995,11 +998,11 @@ RectTransform:
   m_LocalScale: {x: 0.50699997, y: 0.50699997, z: 25.349998}
   m_Children: []
   m_Father: {fileID: 887160224}
-  m_RootOrder: 2
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -1.1537, y: -50}
+  m_AnchoredPosition: {x: -1.1537, y: -24.980011}
   m_SizeDelta: {x: 1192.06, y: 331.15}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1937679228
@@ -1035,10 +1038,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Careful!
-    game over can happen if you lose all your health, but also
-    if you shoot one of the hostages with dangerous bullets, or if you shoot an alien
-    with rescue bullets.'
+  m_Text: Careful! game over can happen if you lose all your health, but also if
+    you shoot one of the hostages with dangerous bullets, or if you shoot an alien
+    with rescue bullets.
 --- !u!222 &1937679229
 CanvasRenderer:
   m_ObjectHideFlags: 0
