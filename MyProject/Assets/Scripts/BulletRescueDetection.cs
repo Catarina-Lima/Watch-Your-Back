@@ -37,7 +37,8 @@ public class BulletRescueDetection : MonoBehaviour
                 endGame();
                 return;
             }
-            
+
+            SoundManager.PlaySound("saveP");
             Destroy(gameObject);
             
 

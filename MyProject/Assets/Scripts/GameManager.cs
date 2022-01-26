@@ -37,8 +37,16 @@ public class GameManager {
 
 
     public static void LoadNextLevel(int scene) {
-
-        SceneManager.LoadScene(scene);
+        if(scene == 0)
+        {
+            SoundManager.PlaySound("gameOver");
+            SceneManager.LoadScene(scene);
+        } else
+        {
+            SoundManager.PlaySound("victory");
+            SceneManager.LoadScene(scene);
+        }
+        
     }
 
 

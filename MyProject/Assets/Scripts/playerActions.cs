@@ -86,6 +86,7 @@ public class playerActions : MonoBehaviour
     }
 
     void fireBullet(Vector2 direction, float rotationZ){
+        SoundManager.PlaySound("shoot");
         GameObject b = Instantiate(bulletPrefab) as GameObject;
         b.transform.position = firePoint.position;//hero.transform.position;
         b.transform.rotation = Quaternion.Euler(0.0f, 0.0f, rotationZ);
@@ -97,6 +98,7 @@ public class playerActions : MonoBehaviour
 
     void rescueBullet(Vector2 direction, float rotationZ)
     {
+        SoundManager.PlaySound("shoot");
         GameObject br = Instantiate(bulletRescue) as GameObject;
         br.transform.position = firePoint.position;
         br.transform.rotation = Quaternion.Euler(0.0f, 0.0f, rotationZ);

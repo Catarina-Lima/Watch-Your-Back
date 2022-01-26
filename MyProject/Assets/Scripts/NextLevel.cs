@@ -12,7 +12,7 @@ public class NextLevel : MonoBehaviour
 
         HealthBar player = hitInfo.GetComponent<HealthBar>();
         if(player != null){
-             GameManager.ChangeScene(SceneManager.GetActiveScene().buildIndex + 1, SceneManager.GetActiveScene().buildIndex);
+            GameManager.ChangeScene(SceneManager.GetActiveScene().buildIndex + 1, SceneManager.GetActiveScene().buildIndex);
         }
         
     }
