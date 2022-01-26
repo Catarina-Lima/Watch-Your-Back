@@ -4031,7 +4031,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 474.27338, y: -384.33743}
+  m_AnchoredPosition: {x: -25, y: -26}
   m_SizeDelta: {x: 252.66998, y: 84.59}
   m_Pivot: {x: 1, y: 1}
 --- !u!114 &251647753
@@ -8442,7 +8442,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 3
   m_Sprite: {fileID: 21300000, guid: 1b439945ecb7da94e89c1a3b255d7b3f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -11912,7 +11912,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: -461, y: 563}
+  m_AnchoredPosition: {x: -460.99997, y: 563}
   m_SizeDelta: {x: 8000, y: 8000}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1058702571
@@ -15422,6 +15422,7 @@ GameObject:
   - component: {fileID: 1719957728}
   - component: {fileID: 1719957727}
   - component: {fileID: 1719957726}
+  - component: {fileID: 1719957730}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -15524,6 +15525,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1719957730
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1719957724}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9ef1fc5929320e342b389b6fc15dfaea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1736892200
 GameObject:
   m_ObjectHideFlags: 0

@@ -3553,6 +3553,7 @@ GameObject:
   - component: {fileID: 791357868}
   - component: {fileID: 791357871}
   - component: {fileID: 791357872}
+  - component: {fileID: 791357873}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -3655,6 +3656,18 @@ MonoBehaviour:
   bulletPrefab: {fileID: 8177319127926474859, guid: 6f1745679dc44e841ad1a1a4fa4504a8, type: 3}
   bulletRescue: {fileID: 6137025581117120523, guid: e230a7501b0d23a46ab6d175dedf77d6, type: 3}
   firePoint: {fileID: 2000533294}
+--- !u!114 &791357873
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 791357867}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9ef1fc5929320e342b389b6fc15dfaea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &795414088
 GameObject:
   m_ObjectHideFlags: 0
@@ -6825,7 +6838,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 0
     m_LineSpacing: 11
-  m_Text: 'Save your friends
+  m_Text: 'Save ALL your friends
 
 '
 --- !u!222 &1308597990

@@ -6,13 +6,13 @@ using UnityEngine.SceneManagement;
 
 public class GameManager {
 
-    public static int gameOverScene = 0;
-    public static int startMenu = 1;
-    public static int controlMenu = 2;
-    public static int creditScene = 3;
-    public static int movingScene = 4;
-    public static int levelOneScene = 5 ;
-    public static int mainLevel = 6;
+    public static int gameOverScene = 6;
+    public static int startMenu = 0;
+    public static int controlMenu = 1;
+    public static int creditScene = 2;
+    public static int movingScene = 3;
+    public static int levelOneScene = 4 ;
+    public static int mainLevel = 5;
 
     static int atual;
 
