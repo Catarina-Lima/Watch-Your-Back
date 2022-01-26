@@ -1039,8 +1039,8 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: Careful! game over can happen if you lose all your health, but also if
-    you shoot one of the hostages with dangerous bullets, or if you shoot an alien
-    with rescue bullets.
+    you shoot one of the hostages with dangerous bullets, or an alien gets shot with
+    rescue bullets.
 --- !u!222 &1937679229
 CanvasRenderer:
   m_ObjectHideFlags: 0
