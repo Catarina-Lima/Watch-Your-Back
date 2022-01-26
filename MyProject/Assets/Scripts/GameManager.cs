@@ -42,4 +42,10 @@ public class GameManager {
     }
 
 
+    public static void leaveGame(){
+        Debug.Log("sair");
+        Application.Quit();
+    }
+
+
 }

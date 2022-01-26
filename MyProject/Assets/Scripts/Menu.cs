@@ -37,4 +37,10 @@ public class Menu : MonoBehaviour
     }
 
 
+    public void quitgame(){
+        
+        GameManager.leaveGame();
+    }
+
+
 }
