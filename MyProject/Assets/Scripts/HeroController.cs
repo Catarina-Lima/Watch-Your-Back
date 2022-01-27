@@ -54,7 +54,7 @@ public class HeroController : MonoBehaviour
 
     public void rechargeGun()
     {
-        if(bullets == 0)
+        if(hasGun && bullets == 0)
         {
             bullets = 2;
             bulletsRescueUI.GetComponent<UIScreen>().allBullets();

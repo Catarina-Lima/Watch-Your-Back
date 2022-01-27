@@ -63,7 +63,7 @@ public class BulletRescueDetection : MonoBehaviour
         Debug.Log(SceneManager.GetActiveScene().buildIndex);
 
         if(SceneManager.GetActiveScene().buildIndex == 5){
-                GameManager.LoadNextLevel(GameManager.startMenu);
+                GameManager.LoadNextLevel(GameManager.creditScene);
             }
         else {
             GameManager.ChangeScene(SceneManager.GetActiveScene().buildIndex + 1, SceneManager.GetActiveScene().buildIndex);
